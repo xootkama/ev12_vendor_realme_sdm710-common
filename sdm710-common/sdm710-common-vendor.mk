@@ -1498,4 +1498,6 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     TimeService \
     PowerOffAlarm \
+    QPerformance \
+    UxPerformance \
     WfdCommon
