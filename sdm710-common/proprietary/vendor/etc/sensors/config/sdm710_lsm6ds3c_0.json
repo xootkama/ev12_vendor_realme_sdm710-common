@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK"],
-    "soc_id": ["336", "341", "360"]
+    "soc_id": ["291", "246", "305", "321", "336", "341", "360","347", "393"]
   },
   "lsm6ds3c_0_platform":{
     "owner": "lsm6ds3c",
@@ -55,14 +55,14 @@
     },
     ".orient":{
       "owner": "lsm6ds3c",
-      "x":{ "type": "str", "ver": "1",
-        "data": "+x"
+      "x":{ "type": "str", "ver": "2",
+        "data": "-x"
       },
-      "y":{ "type": "str", "ver": "1",
+      "y":{ "type": "str", "ver": "2",
         "data": "-y"
       },
-      "z":{ "type": "str", "ver": "1",
-        "data": "-z"
+      "z":{ "type": "str", "ver": "2",
+        "data": "+z"
       }
     },
     ".orient_041":{

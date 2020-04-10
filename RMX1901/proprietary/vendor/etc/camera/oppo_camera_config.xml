@@ -23,18 +23,19 @@
     <Count>1</Count>
     <Value>1920</Value>
   </Feature>
-  <Feature>
+ <!-- <Feature>
     <VendorTag>tunning.back.portrait.normal.picturesize</VendorTag>
     <Type>Int32</Type>
     <Count>2</Count>
     <Value>4000*3000</Value>
-  </Feature>
-  <Feature>
+  </Feature> -->
+  <!--Zihao.Li@RM.Camera, 2019/01/12, Modify for set oppo engineer picture size to 16M-->
+  <!--Feature>
     <VendorTag>high.picturesize</VendorTag>
     <Type>Int32</Type>
     <Count>2</Count>
     <Value>8000*6000</Value>
-  </Feature>
+  </Feature-->
   <Feature>
     <VendorTag>feature.sticker.support</VendorTag>
     <Type>Byte</Type>
@@ -47,11 +48,12 @@
     <Count>1</Count>
     <Value>1</Value>
   </Feature>
+  <!--Liangyu.Zhang@RM.Camera, 2019/03/23, Modify 750ms to 800ms-->
   <Feature>
     <VendorTag>tunning.panorama.front.to.rear.switchtime</VendorTag>
     <Type>Int32</Type>
     <Count>1</Count>
-    <Value>750</Value>
+    <Value>800</Value>
   </Feature>
   <Feature>
     <VendorTag>tunning.panorama.rear.to.front.switchtime</VendorTag>
@@ -141,7 +143,7 @@
     <VendorTag>tunning.rear.to.front.switchtime</VendorTag>
     <Type>Int32</Type>
     <Count>1</Count>
-    <Value>700</Value>
+    <Value>1000</Value>
   </Feature>
   <Feature>
     <VendorTag>feature.video.4k.support</VendorTag>
@@ -171,13 +173,13 @@
     <VendorTag>feature.video.720p.60fps.support</VendorTag>
     <Type>Byte</Type>
     <Count>1</Count>
-    <Value>1</Value>
+    <Value>0</Value>
   </Feature>
   <Feature>
     <VendorTag>feature.video.1080p.60fps.support</VendorTag>
     <Type>Byte</Type>
     <Count>1</Count>
-    <Value>1</Value>
+    <Value>0</Value>
   </Feature>
   <Feature>
     <VendorTag>feature.video.4k.60fps.support</VendorTag>
@@ -185,6 +187,7 @@
     <Count>1</Count>
     <Value>0</Value>
   </Feature>
+  <!--Liangyu.Zhang@RM.Camera, 2019/01/22, Modify for fixed bug1783962-->
   <Feature>
     <VendorTag>feature.motor.flashlight.support</VendorTag>
     <Type>Byte</Type>
@@ -195,7 +198,7 @@
     <VendorTag>tunning.super.night.camera.mode</VendorTag>
     <Type>Int32</Type>
     <Count>1</Count>
-    <Value>1059</Value>
+    <Value>1058</Value>
   </Feature>
   <Feature>
     <VendorTag>feature.3hdr.support</VendorTag>
@@ -215,10 +218,18 @@
     <Count>1</Count>
     <Value>1</Value>
   </Feature>
+  <!--Gaoqiang.Liu@RM.Camera, 2019/02/26, Modify for superphoto-->
   <Feature>
-    <VendorTag>feature.ubwcnv12.support</VendorTag>
+    <VendorTag>high.resolution.support</VendorTag>
     <Type>Byte</Type>
     <Count>1</Count>
     <Value>1</Value>
+  </Feature>
+  <!--Gaoqiang.Liu@RM.Camera, 2019/03/26, Modify for message call camera-->
+  <Feature>
+    <VendorTag>capture.third.size</VendorTag>
+    <Type>Int32</Type>
+    <Count>1</Count>
+    <Value>6320000</Value>
   </Feature>
 </FeatureConfigs>

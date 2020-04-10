@@ -1,7 +1,7 @@
 {
   "config":{
-    "hw_platform": ["QRD", "MTP", "Dragon", "Surf"],
-    "soc_id": ["336", "347", "360", "393"]
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "IDP"],
+    "soc_id": ["336", "347", "360", "393", "394"]
   },
   "power":{
     "owner": "power_manager",
@@ -242,6 +242,7 @@
         },
         "sleep_fs":{ "type": "int", "ver": "0",
           "data": "2"
+        },
         "sleep_dir":{ "type": "int", "ver": "0",
           "data": "0"
         },

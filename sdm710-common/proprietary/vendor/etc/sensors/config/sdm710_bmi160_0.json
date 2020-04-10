@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK"],
-    "soc_id": ["336", "341", "360"]
+    "soc_id": ["291", "246", "305", "321", "336", "341", "360","347", "393"]
   },
   "bmi160_0_platform":{
     "owner": "bmi160",
@@ -58,6 +58,30 @@
     },
     ".orient":{
       "owner": "bmi160",
+      "x":{ "type": "str", "ver": "5",
+        "data": "+y"
+      },
+      "y":{ "type": "str", "ver": "5",
+        "data": "+x"
+      },
+      "z":{ "type": "str", "ver": "5",
+        "data": "-z"
+      }
+    },
+    ".orient_19691":{
+      "owner": "bmi160",
+      "x":{ "type": "str", "ver": "6",
+        "data": "+y"
+      },
+      "y":{ "type": "str", "ver": "6",
+        "data": "-x"
+      },
+      "z":{ "type": "str", "ver": "6",
+        "data": "+z"
+      }
+    },
+    ".orient_18041":{
+      "owner": "bmi160",
       "x":{ "type": "str", "ver": "4",
         "data": "-y"
       },
@@ -68,7 +92,7 @@
         "data": "-z"
       }
     },
-	".orient_t1":{
+    ".orient_t1":{
       "owner": "bmi160",
       "x":{ "type": "str", "ver": "1",
         "data": "+x"
@@ -102,6 +126,18 @@
       },
       "z":{ "type": "str", "ver": "5",
         "data": "-z"
+      }
+    },
+    ".orient_19651":{
+      "owner": "bmi160",
+      "x":{ "type": "str", "ver": "1",
+        "data": "-y"
+      },
+      "y":{ "type": "str", "ver": "1",
+        "data": "+x"
+      },
+      "z":{ "type": "str", "ver": "1",
+        "data": "+z"
       }
     },
     ".gyro":{

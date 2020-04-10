@@ -1,15 +1,15 @@
 {
   "config":
   {
-    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK"],
-    "soc_id": ["336", "341", "360"]
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK", "IDP"],
+    "soc_id": ["291", "246", "305", "321", "336", "339", "341", "355", "360", "361", "365", "366", "393"]
   },
   "bmi160_0":{
-    "owner": "bmi160",
+    "owner": "sns_bmi160",
     ".accel":{
-      "owner": "bmi160",
+      "owner": "sns_bmi160",
       ".config":{
-        "owner": "bmi160",
+        "owner": "sns_bmi160",
         "is_dri":{ "type": "int", "ver": "0",
           "data": "1"
         },
@@ -25,9 +25,9 @@
       }
     },
     ".gyro":{
-      "owner": "bmi160",
+      "owner": "sns_bmi160",
       ".config":{
-        "owner": "bmi160",
+        "owner": "sns_bmi160",
         "is_dri":{ "type": "int", "ver": "0",
           "data": "1"
         },
@@ -43,9 +43,9 @@
       }
     },
     ".md":{
-      "owner": "bmi160",
+      "owner": "sns_bmi160",
       ".config":{
-        "owner": "bmi160",
+        "owner": "sns_bmi160",
         "is_dri":{ "type": "int", "ver": "0",
           "data": "1"
         },
@@ -61,9 +61,9 @@
       }
     },
     ".temp":{
-      "owner": "bmi160",
+      "owner": "sns_bmi160",
       ".config":{
-        "owner": "bmi160",
+        "owner": "sns_bmi160",
         "is_dri":{ "type": "int", "ver": "0",
           "data": "0"
         },

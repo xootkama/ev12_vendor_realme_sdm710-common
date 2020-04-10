@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK"],
-    "soc_id": ["291", "246", "305", "321", "336", "341", "360"]
+    "soc_id": ["291", "246", "305", "321", "336", "341", "360","347", "393"]
   },
   "tsl2540_platform":{
     "owner": "sns_tsl2540",
@@ -55,17 +55,17 @@
     },
     ".coefficient":{
       "owner": "sns_tsl2540",
-            "0":{ "type": "flt", "ver": "4",
-        "data": "2717.0"
+            "0":{ "type": "flt", "ver": "8",
+        "data": "3300.0"
       },
-      "1":{ "type": "flt", "ver": "3",
-        "data": "-0.216"
+      "1":{ "type": "flt", "ver": "6",
+        "data": "-0.211"
       },
-      "2":{ "type": "flt", "ver": "3",
-        "data": "0.467"
+      "2":{ "type": "flt", "ver": "6",
+        "data": "0.768"
       },
-      "3":{ "type": "flt", "ver": "3",
-        "data": "-0.052"
+      "3":{ "type": "flt", "ver": "6",
+        "data": "-0.137"
       },
       "4":{ "type": "flt", "ver": "2",
         "data": "1.0"
@@ -92,19 +92,58 @@
         "data": "0.0"
       }
     },
+    ".coefficient_19691":{
+      "owner": "sns_tsl2540",
+      "0":{ "type": "flt", "ver": "1",
+        "data": "1100.0"
+      },
+      "1":{ "type": "flt", "ver": "1",
+        "data": "-0.250"
+      },
+      "2":{ "type": "flt", "ver": "1",
+        "data": "0.768"
+      },
+      "3":{ "type": "flt", "ver": "1",
+        "data": "-0.135"
+      },
+      "4":{ "type": "flt", "ver": "1",
+        "data": "1.0"
+      },
+      "5":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      },
+      "7":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      },
+      "9":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "1",
+        "data": "1000.0"
+      },
+      "11":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      }
+    },
 	".coefficient_1":{
       "owner": "sns_tsl2540",
-      "0":{ "type": "flt", "ver": "4",
-        "data": "2717.0"
+      "0":{ "type": "flt", "ver": "8",
+        "data": "3300.0"
       },
-      "1":{ "type": "flt", "ver": "3",
-        "data": "-0.216"
+      "1":{ "type": "flt", "ver": "6",
+        "data": "-0.211"
       },
-      "2":{ "type": "flt", "ver": "3",
-        "data": "0.467"
+      "2":{ "type": "flt", "ver": "6",
+        "data": "0.768"
       },
-      "3":{ "type": "flt", "ver": "3",
-        "data": "-0.052"
+      "3":{ "type": "flt", "ver": "6",
+        "data": "-0.137"
       },
       "4":{ "type": "flt", "ver": "2",
         "data": "1.0"
