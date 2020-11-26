@@ -34,6 +34,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/etc/acdbdata/18041/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/18041/Hdmi_cal.acdb \
     vendor/realme/RMX1901/proprietary/vendor/etc/acdbdata/18041/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/18041/Headset_cal.acdb \
     vendor/realme/RMX1901/proprietary/vendor/etc/acdbdata/18041/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/18041/Speaker_cal.acdb \
+    vendor/realme/RMX1901/proprietary/vendor/etc/acdbdata/18539/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/18539/Bluetooth_cal.acdb \
+    vendor/realme/RMX1901/proprietary/vendor/etc/acdbdata/18539/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/18539/General_cal.acdb \
+    vendor/realme/RMX1901/proprietary/vendor/etc/acdbdata/18539/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/18539/Global_cal.acdb \
+    vendor/realme/RMX1901/proprietary/vendor/etc/acdbdata/18539/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/18539/Handset_cal.acdb \
+    vendor/realme/RMX1901/proprietary/vendor/etc/acdbdata/18539/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/18539/Hdmi_cal.acdb \
+    vendor/realme/RMX1901/proprietary/vendor/etc/acdbdata/18539/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/18539/Headset_cal.acdb \
+    vendor/realme/RMX1901/proprietary/vendor/etc/acdbdata/18539/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/18539/Speaker_cal.acdb \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/Charming.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Charming.cng \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/M_Verify_Faster_Common_4.0.0_wp.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Verify_Faster_Common_4.0.0_wp.model \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/arc_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/arc_golden.bin \
