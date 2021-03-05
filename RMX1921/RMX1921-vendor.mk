@@ -1,4 +1,4 @@
-# Copyright (C) 2019-2020 The LineageOS Project
+# Copyright (C) 2019-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,17 +19,9 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/realme/RMX1921/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
-    vendor/realme/RMX1921/proprietary/vendor/bin/hw/vendor.oppo.engnative.engsensor@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.engnative.engsensor@1.0-service \
-    vendor/realme/RMX1921/proprietary/vendor/bin/hw/vendor.oppo.engnative.messager@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.engnative.messager@1.0-service \
     vendor/realme/RMX1921/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service \
     vendor/realme/RMX1921/proprietary/vendor/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service \
-    vendor/realme/RMX1921/proprietary/vendor/bin/hw/vendor.oppo.hardware.cryptoeng@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.cryptoeng@1.0-service \
-    vendor/realme/RMX1921/proprietary/vendor/bin/hw/vendor.oppo.hardware.hypnus@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.hypnus@1.0-service \
-    vendor/realme/RMX1921/proprietary/vendor/bin/hw/vendor.oppo.hardware.ktv@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.ktv@1.0-service \
-    vendor/realme/RMX1921/proprietary/vendor/bin/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-service \
-    vendor/realme/RMX1921/proprietary/vendor/bin/hw/vendor.oppo.hardware.oiface@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.oiface@1.0-service \
-    vendor/realme/RMX1921/proprietary/vendor/bin/hw/vendor.oppo.wifi.sniffer@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.wifi.sniffer@1.0-service \
-    vendor/realme/RMX1921/proprietary/vendor/bin/opposysd:$(TARGET_COPY_OUT_VENDOR)/bin/opposysd \
+    vendor/realme/RMX1921/proprietary/vendor/etc/OPPO_OLED_AD_calib.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/OPPO_OLED_AD_calib.cfg \
     vendor/realme/RMX1921/proprietary/vendor/etc/acdbdata/19651/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/19651/Bluetooth_cal.acdb \
     vendor/realme/RMX1921/proprietary/vendor/etc/acdbdata/19651/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/19651/General_cal.acdb \
     vendor/realme/RMX1921/proprietary/vendor/etc/acdbdata/19651/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/19651/Global_cal.acdb \
@@ -49,23 +41,32 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1921/proprietary/vendor/etc/camera/mtStereoParams.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mtStereoParams.bin \
     vendor/realme/RMX1921/proprietary/vendor/etc/camera/mwStereoParams.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mwStereoParams.bin \
     vendor/realme/RMX1921/proprietary/vendor/etc/camera/oppo_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_camera_config.xml \
+    vendor/realme/RMX1921/proprietary/vendor/etc/camera/oppo_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_camera_config.xml \
     vendor/realme/RMX1921/proprietary/vendor/etc/camera/skinSeg.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/skinSeg.model \
     vendor/realme/RMX1921/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
-    vendor/realme/RMX1921/proprietary/vendor/etc/init/vendor.oppo.engnative.engsensor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.engnative.engsensor@1.0-service.rc \
-    vendor/realme/RMX1921/proprietary/vendor/etc/init/vendor.oppo.engnative.messager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.engnative.messager@1.0-service.rc \
     vendor/realme/RMX1921/proprietary/vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/RMX1921/proprietary/vendor/etc/init/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service.rc \
-    vendor/realme/RMX1921/proprietary/vendor/etc/init/vendor.oppo.hardware.cryptoeng@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.cryptoeng@1.0-service.rc \
-    vendor/realme/RMX1921/proprietary/vendor/etc/init/vendor.oppo.hardware.hypnus@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.hypnus@1.0-service.rc \
-    vendor/realme/RMX1921/proprietary/vendor/etc/init/vendor.oppo.hardware.ktv@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.ktv@1.0-service.rc \
-    vendor/realme/RMX1921/proprietary/vendor/etc/init/vendor.oppo.hardware.mmdisplayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.mmdisplayfeature@1.0-service.rc \
-    vendor/realme/RMX1921/proprietary/vendor/etc/init/vendor.oppo.hardware.oiface@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.oiface@1.0-service.rc \
-    vendor/realme/RMX1921/proprietary/vendor/etc/init/vendor.oppo.wifi.sniffer@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.wifi.sniffer@1.0-service.rc \
-    vendor/realme/RMX1921/proprietary/vendor/etc/qdcm_calib_data_oppo18081samsung_ams641rw01_1080_2340_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_oppo18081samsung_ams641rw01_1080_2340_cmd_mode_dsi_panel.xml \
+    vendor/realme/RMX1921/proprietary/vendor/etc/license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/license.lic \
+    vendor/realme/RMX1921/proprietary/vendor/etc/qdcm_calib_data_rm19651samsung_ams641rw01_1080_2340_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_rm19651samsung_ams641rw01_1080_2340_cmd_mode_dsi_panel.xml \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi160_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/devinfo_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/devinfo_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/lsm6ds3c_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6ds3c_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/mmc5603nj_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mmc5603nj_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/sdm710_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdm710_ak991x_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/sdm710_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdm710_bmi160_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/sdm710_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdm710_default_sensors.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/sdm710_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdm710_irq.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/sdm710_lsm6ds3c_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdm710_lsm6ds3c_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/sdm710_mmc5603nj_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdm710_mmc5603nj_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/sdm710_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdm710_power_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/sdm710_stk2x2x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdm710_stk2x2x_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/sdm710_stk3x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdm710_stk3x3x_0.json \
+    vendor/realme/RMX1921/proprietary/vendor/etc/sensors/config/sdm710_tsl2540_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdm710_tsl2540_0.json \
     vendor/realme/RMX1921/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/realme/RMX1921/proprietary/vendor/firmware/dpAP_full.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/dpAP_full.mbn \
     vendor/realme/RMX1921/proprietary/vendor/firmware/dpAP_mini.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/dpAP_mini.mbn \
-    vendor/realme/RMX1921/proprietary/vendor/firmware/fastchg/19651/oppo_vooc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fastchg/19651/oppo_vooc_fw.bin \
     vendor/realme/RMX1921/proprietary/vendor/firmware/goodixfp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b00 \
     vendor/realme/RMX1921/proprietary/vendor/firmware/goodixfp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b01 \
     vendor/realme/RMX1921/proprietary/vendor/firmware/goodixfp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b02 \
@@ -75,53 +76,24 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1921/proprietary/vendor/firmware/goodixfp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b06 \
     vendor/realme/RMX1921/proprietary/vendor/firmware/goodixfp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b07 \
     vendor/realme/RMX1921/proprietary/vendor/firmware/goodixfp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.mdt \
-    vendor/realme/RMX1921/proprietary/vendor/firmware/ois_bu24218gwl.coeff:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_bu24218gwl.coeff \
-    vendor/realme/RMX1921/proprietary/vendor/firmware/ois_bu24218gwl.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_bu24218gwl.prog \
-    vendor/realme/RMX1921/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
+    vendor/realme/RMX1921/proprietary/vendor/firmware/tfa98xx_19651.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx_19651.cnt \
     vendor/realme/RMX1921/proprietary/vendor/firmware/tp/19651/FW_S3706_SAMSUNG.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/19651/FW_S3706_SAMSUNG.img \
     vendor/realme/RMX1921/proprietary/vendor/firmware/tp/19651/FW_S3706_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/19651/FW_S3706_SAMSUNG_FAE.img \
     vendor/realme/RMX1921/proprietary/vendor/firmware/tp/19651/LIMIT_S3706_SAMSUNG.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/19651/LIMIT_S3706_SAMSUNG.img \
-    vendor/realme/RMX1921/proprietary/vendor/firmware/ufs/SAMSUNG-KM2B8001CM-BB01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ufs/SAMSUNG-KM2B8001CM-BB01.bin \
-    vendor/realme/RMX1921/proprietary/vendor/firmware/ufs/SAMSUNG-KM5V7001DM-B621.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ufs/SAMSUNG-KM5V7001DM-B621.bin \
-    vendor/realme/RMX1921/proprietary/vendor/firmware/ufs/SAMSUNG-KM8B8001JM-BC01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ufs/SAMSUNG-KM8B8001JM-BC01.bin \
-    vendor/realme/RMX1921/proprietary/vendor/firmware/ufs/SAMSUNG-KM8V7001JM-B810.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ufs/SAMSUNG-KM8V7001JM-B810.bin \
-    vendor/realme/RMX1921/proprietary/vendor/firmware/ufs/SKhynix-H9HQ16AECMMDAR.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ufs/SKhynix-H9HQ16AECMMDAR.bin \
+    vendor/realme/RMX1921/proprietary/vendor/firmware/voice_amodel.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/voice_amodel.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.gc2375h.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.gc2375h.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.gc5035.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.hi846.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.hi846.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.imx316.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx316.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.imx362.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx362.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.imx471.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx471.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.imx519.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx519.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.imx576.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx576.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.imx586.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx586.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.s5k2t7sx.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.s5k2t7sx.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.s5k2x5.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.s5k2x5.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.s5k3p9sp.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.s5k3p9sp.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.s5k5e9.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.s5k5e9.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.s5kgw1.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.s5kgw1.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensor.sp2509v.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.sp2509v.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensormodule.holitech_gc2375h.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.holitech_gc2375h.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensormodule.holitech_sp2509v.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.holitech_sp2509v.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensormodule.sunny_hi846.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sunny_hi846.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensormodule.sunny_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sunny_s5kgw1.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensormodule.sunny_s5kgw1_evt0_2.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sunny_s5kgw1_evt0_2.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.sensormodule.trulyi2c20_imx471.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.trulyi2c20_imx471.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.tuned.holitech_gc2375h.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.holitech_gc2375h.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.tuned.holitech_sp2509v.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.holitech_sp2509v.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.tuned.sunny_hi846.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.sunny_hi846.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.tuned.sunny_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.sunny_s5kgw1.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/com.qti.tuned.truly_imx471.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.truly_imx471.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.arcsoft.node.yuvhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.arcsoft.node.yuvhdr.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.bokeh.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.drawafinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.drawafinfo.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.eis.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.frontbokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.frontbokeh.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.frontrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.frontrtb.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.oppoengmode.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.oppoengmode.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.postview.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.postview.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.preview.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.rawhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.rawhdr.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.rearrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.rearrtb.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.sat.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.sat.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.slicm.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.slicm.so \
@@ -129,7 +101,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.snapshotb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.snapshotb.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.tof.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.tofmatch.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.tofmatch.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.oppo.node.watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oppo.node.watermark.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv2.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv3.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.hvx.addconstant.so \
@@ -151,6 +122,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.asd.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awb.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awbwrapper.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.haf.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.qti.stats.localhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.localhistogram.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlib.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibsony.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibwrapper.so \
@@ -162,155 +135,89 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.vidhance.node.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.vidhance.node.eis.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/components/com.vidhance.stats.aec_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.vidhance.stats.aec_dmbr.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/camera/data.zip:$(TARGET_COPY_OUT_VENDOR)/lib/camera/data.zip \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/oppoimx362_eis_1350_1080p_30fps.config:$(TARGET_COPY_OUT_VENDOR)/lib/camera/oppoimx362_eis_1350_1080p_30fps.config \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/oppoimx362_eis_720p_30fps.config:$(TARGET_COPY_OUT_VENDOR)/lib/camera/oppoimx362_eis_720p_30fps.config \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/oppoimx519_bmi26x_eis_1080p_30fps.config:$(TARGET_COPY_OUT_VENDOR)/lib/camera/oppoimx519_bmi26x_eis_1080p_30fps.config \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/oppoimx519_bmi26x_eis_720p_30fps.config:$(TARGET_COPY_OUT_VENDOR)/lib/camera/oppoimx519_bmi26x_eis_720p_30fps.config \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/oppoimx519_eis_1080p_30fps.config:$(TARGET_COPY_OUT_VENDOR)/lib/camera/oppoimx519_eis_1080p_30fps.config \
-    vendor/realme/RMX1921/proprietary/vendor/lib/camera/oppoimx519_eis_720p_30fps.config:$(TARGET_COPY_OUT_VENDOR)/lib/camera/oppoimx519_eis_720p_30fps.config \
     vendor/realme/RMX1921/proprietary/vendor/lib/hw/audio.primary.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.sdm710.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.goodix.default.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/hw/fingerprint.goodix_G2.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.goodix_G2.default.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/hw/fingerprint.goodix_G3.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.goodix_G3.default.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/hw/sensors.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.sdm710.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/hw/vendor.oppo.hardware.camera.oppoHalAssist@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.camera.oppoHalAssist@1.0-impl.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/hw/vendor.oppo.hardware.hypnus@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.hypnus@1.0-impl.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/hw/vendor.oppo.hardware.ktv@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.ktv@1.0-impl.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/hw/vendor.oppo.hardware.oiface@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.oiface@1.0-impl.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/lib3DSlender.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3DSlender.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libMegviiHum.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMegviiHum.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libOPPORectify.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOPPORectify.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libOccluDetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOccluDetect.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libOppoAPSMemMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOppoAPSMemMgr.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libOppoAlgoClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOppoAlgoClient.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libPerfectlyClearCrux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPerfectlyClearCrux.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libPolarrRender.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPolarrRender.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libSCES.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSCES.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSNPE.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libSNPE_G.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSNPE_G.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libSTDualCamCaptureBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSTDualCamCaptureBokeh.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libSTDualCamPreviewBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSTDualCamPreviewBokeh.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libSTdisp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSTdisp.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libSensorManagerHAL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSensorManagerHAL.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX471RmscLibrary.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libSonyIMX519MbrLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX519MbrLibrary.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libVDBlurlessAPI_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDBlurlessAPI_v2.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libVDDualCameraBlurlessAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDDualCameraBlurlessAPI.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libVDEyeEnhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDEyeEnhance.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libVDImageAdjustment.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDImageAdjustment.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libVDPostureDetection.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDPostureDetection.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libVDRTImageAdjustment.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDRTImageAdjustment.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libVDSuperPhotoAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDSuperPhotoAPI.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_distortion_correction.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_distortion_correction_710.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_distortion_correction_710.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_dualcam_bokeh_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_bokeh_api.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_dualcam_portrait_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_portrait_shot.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_dualcam_refocus_left.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_left.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_dualcam_refocus_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_preview.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_dualcam_refocus_right.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_right.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_hdr_couple_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_hdr_couple_api.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_hdr_denoise_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_hdr_denoise_api.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_hdr_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_hdr_hvx_stub.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_hdrplus_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_hdrplus_hvx_stub.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_high_dynamic_range.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_high_dynamic_range_couple.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_high_dynamic_range_couple.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_high_dynamic_range_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_high_dynamic_range_raw.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_llhdr_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_llhdr_hvx_stub.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_low_light_hdr.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_low_light_hdr_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_low_light_hdr_raw.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_picauto.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_picauto.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_portraitSN_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_portraitSN_hvx_stub.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_portrait_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_portrait_super_night_raw.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_relighting_pro_image.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_relighting_pro_image.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_smart_denoise.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_smart_denoise.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_super_night_raw.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libarm_proxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarm_proxy_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libaudioEngineerTest.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioEngineerTest.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libblur_channel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblur_channel.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libbokehclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbokehclient.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc++_shared.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libcamera_core_hwi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_core_hwi.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libcamhidlsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamhidlsensor.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov7.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov8.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdengine.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxstatscore.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswprocessalgo.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvface_api.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libdepthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdepthmap.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libffv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libffv.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_hal.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libgf_hal_G2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_hal_G2.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libgf_hal_G3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_hal_G3.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libhvx_proxy_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhvx_proxy_stub.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libhypnusclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypnusclient.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libiu456_datapath_filt_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libiu456_datapath_filt_lib.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libiu456_datapath_processor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libiu456_datapath_processor.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libmegface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmegface.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libmegface_meglive.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmegface_meglive.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libml_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libml_util.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-omxcore.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libmms_gyro_vstab.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_gyro_vstab.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libmms_gyro_vstab_auth.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_gyro_vstab_auth.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libmms_hal_vstab.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_hal_vstab.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libmms_warper_vstab.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_warper_vstab.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libnnp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnnp.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libobcdepth_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libobcdepth_hal.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libocam_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libocam_common.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libocam_snapshot_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libocam_snapshot_intf.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/liboppo_aisd.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppo_aisd.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/liboppo_log_print.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppo_log_print.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/liboppo_platform_hwi.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppo_platform_hwi.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/liboppoalgolib.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppoalgolib.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/liboppocamalgo_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppocamalgo_daemon.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libopposfr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopposfr.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libsdk_3d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdk_3d.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libsdk_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdk_common.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libsnpe_adsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpe_adsp.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libsnpe_cdsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpe_cdsp.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libsnpe_cdsp_v65.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpe_cdsp_v65.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpe_dsp_domains_v2.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libsnpeml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpeml.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsapi.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsdiaglog.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libst_personblur.so:$(TARGET_COPY_OUT_VENDOR)/lib/libst_personblur.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libst_scb_dep1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libst_scb_dep1.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libst_segmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libst_segmentation.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libstblur_capture_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstblur_capture_api.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstdc++.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libstface_fd_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstface_fd_api.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libstface_seg_ocl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstface_seg_ocl.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libstfaceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstfaceunlock.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libstfaceunlocksnpe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstfaceunlocksnpe.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libthread_blur.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthread_blur.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_vendor.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-cpu.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libsymphonypower.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtriplecam_image_optical_zoom.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtriplecam_optical_zoom_control.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtriplecam_video_optical_zoom.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/libvslam.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvslam.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/qcom.camera.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcom.camera.log.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_HD.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libBeautyShot_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libBeautyShot_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libVC1Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1Dec.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1DecDsp_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libVDHexagonBlurless_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVDHexagonBlurless_skel.so \
@@ -318,107 +225,198 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libVDHexagonSuperPhoto_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVDHexagonSuperPhoto_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libarcsoft_hdr_hvx_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcsoft_hdr_hvx_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libarcsoft_llhdr_hvx_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcsoft_llhdr_hvx_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libcamera_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcamera_nn_skel.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libclock_adjust_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libclock_adjust_skel.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libcvpdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcvpdsp_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libdepthmap_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdepthmap_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvdsp_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libproxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libproxy_skel.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v65_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v65_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/libthread_blur_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libthread_blur_skel.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/rfsa/adsp/remote_heap_config.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/remote_heap_config.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/sensors.ap.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ap.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/vendor.oppo.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.commondcs@1.0.so \
     vendor/realme/RMX1921/proprietary/vendor/lib/vendor.oppo.hardware.hypnus@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.hypnus@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/vendor.oppo.hardware.ktv@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.ktv@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/vendor.oppo.hardware.mmdisplayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.mmdisplayfeature@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/vendor.oppo.hardware.oiface@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.oiface@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib/voc.dat.zip:$(TARGET_COPY_OUT_VENDOR)/lib/voc.dat.zip \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensor.gc2375h.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.gc2375h.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensor.hi846.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.hi846.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensor.imx471.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx471.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensor.s5kgw1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5kgw1.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensor.sp2509v.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.sp2509v.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensormodule.holitech_gc2375h.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.holitech_gc2375h.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensormodule.holitech_sp2509v.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.holitech_sp2509v.bin \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensormodule.qtech_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.qtech_s5kgw1.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensormodule.sunny_hi846.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sunny_hi846.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sunny_s5kgw1.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1_evt0_2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sunny_s5kgw1_evt0_2.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.sensormodule.trulyi2c20_imx471.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.trulyi2c20_imx471.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.tuned.holitech_gc2375h.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.holitech_gc2375h.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.tuned.holitech_sp2509v.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.holitech_sp2509v.bin \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.tuned.qtech_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.qtech_s5kgw1.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.tuned.sunny_hi846.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sunny_hi846.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.tuned.sunny_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sunny_s5kgw1.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/com.qti.tuned.truly_imx471.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.truly_imx471.bin \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.arcsoft.node.yuvhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.yuvhdr.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.bokeh.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.drawafinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.drawafinfo.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.frontbokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.frontbokeh.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.frontrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.frontrtb.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.oppoengmode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.oppoengmode.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.postview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.postview.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.preview.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.rearrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.rearrtb.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.sat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.sat.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.slicm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.slicm.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.snapshota.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.snapshota.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.snapshotb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.snapshotb.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.tof.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.oppo.node.tofmatch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oppo.node.tofmatch.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.addconstant.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.binning.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.node.opposwremosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.opposwremosaic.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.remosaic.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.node.superphoto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.superphoto.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awbwrapper.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.stats.localhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.localhistogram.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.slam.node.process.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.slam.node.process.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.vidhance.node.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.node.eis.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.stats.aec_dmbr.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
     vendor/realme/RMX1921/proprietary/vendor/lib64/hw/audio.primary.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.sdm710.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/hw/fingerprint.goodix_G2.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_G2.default.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/hw/fingerprint.goodix_G3.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_G3.default.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/hw/sensors.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.sdm710.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/hw/vendor.oppo.hardware.hypnus@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.hypnus@1.0-impl.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/hw/vendor.oppo.hardware.ktv@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.ktv@1.0-impl.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/hw/vendor.oppo.hardware.oiface@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.oiface@1.0-impl.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/hw/vendor.oppo.hardware.camera.oppoHalAssist@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.camera.oppoHalAssist@1.0-impl.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libOPPORectify.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOPPORectify.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libOppoAPSMemMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOppoAPSMemMgr.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libOppoAlgoClient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOppoAlgoClient.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libPerfectlyClearCrux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPerfectlyClearCrux.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libPolarrRender.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPolarrRender.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX471RmscLibrary.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libVDBlurlessAPI_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDBlurlessAPI_v2.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libVDDualCameraBlurlessAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDDualCameraBlurlessAPI.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libVDEyeEnhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDEyeEnhance.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libVDPostureDetection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDPostureDetection.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libVDSuperPhotoAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDSuperPhotoAPI.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_distortion_correction.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_distortion_correction_710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_distortion_correction_710.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_dualcam_bokeh_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_bokeh_api.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_left.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_left.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_preview.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_right.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_right.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_hdr_denoise_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_denoise_api.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_hdrplus_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdrplus_hvx_stub.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_hdr.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_portraitSN_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portraitSN_hvx_stub.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_portrait_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_super_night_raw.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_relighting_pro_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_relighting_pro_image.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_smart_denoise.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_smart_denoise.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_super_night_raw.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libarm_proxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarm_proxy_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libaudioEngineerTest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioEngineerTest.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libbokehclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbokehclient.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libcamera_core_hwi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_core_hwi.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libcamhidlsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamhidlsensor.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov7.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov8.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvface_api.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libgf_hal_G2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal_G2.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libgf_hal_G3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal_G3.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libhvx_proxy_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhvx_proxy_stub.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libhypnusclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypnusclient.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libloadalgo_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadalgo_stub.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-omxcore.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libnativehelpers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnativehelpers.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libocam_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libocam_common.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libocam_snapshot_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libocam_snapshot_intf.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/liboppo_aisd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboppo_aisd.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/liboppo_log_print.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboppo_log_print.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/liboppo_platform_hwi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboppo_platform_hwi.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/liboppoalgolib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboppoalgolib.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libopposfr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopposfr.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libsnpeml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpeml.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstdc++.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libstface_fd_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstface_fd_api.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphony-cpu.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libsymphonypower.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphonypower.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress_vendor.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_image_optical_zoom.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/qcom.camera.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcom.camera.log.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/rfsa/adsp/libBeautyShot_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libBeautyShot_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/rfsa/adsp/libdsp_streamer_add_constant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libdsp_streamer_add_constant.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/rfsa/adsp/libdsp_streamer_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libdsp_streamer_skel.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/sensors.ap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ap.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.engnative.engsensor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.engnative.engsensor@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.engnative.messager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.engnative.messager@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.engnative.transfer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.engnative.transfer@1.0.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.commondcs@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.cryptoeng@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.cryptoeng@1.0.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.hypnus@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.ktv@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.ktv@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.mmdisplayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.mmdisplayfeature@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.oiface@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.oiface@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.wifi.sniffer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.wifi.sniffer@1.0.so \
-    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.wifi.supplicant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.wifi.supplicant@1.0.so
+    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.radio.oppoappradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.radio.oppoappradio@1.0.so \
+    vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.oppo.hardware.radio.opporadio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.radio.opporadio@1.0.so
