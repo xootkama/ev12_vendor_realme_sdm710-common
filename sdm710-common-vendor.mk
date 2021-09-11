@@ -1229,8 +1229,6 @@ PRODUCT_PACKAGES += \
     uceShimService \
     ims \
     qcrilmsgtunnel \
-    PerformanceMode \
-    workloadclassifier \
     WfdService \
     dpmserviceapp \
     WfdCommon \
